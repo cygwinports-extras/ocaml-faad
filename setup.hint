@@ -1,5 +1,5 @@
 category: Audio OCaml
-requires: cygwin libfaad0 ocaml
+requires: cygwin libfaad2 ocaml
 sdesc: "OCaml AAC decoder bindings"
 ldesc: "This package contains an O'Caml interface for the AAC audio 
 decoder, otherwise known as libfaad."
