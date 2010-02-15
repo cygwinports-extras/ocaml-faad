@@ -4,17 +4,19 @@ This package contains an O'Caml interface for the AAC audio decoder,
 otherwise known as libfaad.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libfaad2-2.7-1
-  ocaml-3.10.2-1
+  cygwin-1.7.1-1
+  libfaad2-2.7-10
+  libgcc1-4.3.4-3
+  ocaml-3.11.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  binutils-20080624-2
-  cygport-0.4.3-1
-  gcc-core-3.4.4-3
+  binutils-2.19.51-1
+  cygport-0.9.80-1
+  flexdll-0.20-1
+  gcc4-core-4.3.4-3
   make-3.81-2
-  ocaml-findlib-1.2.2-1
+  ocaml-findlib-1.2.5-1
 
 Canonical website:
   http://savonet.sourceforge.net/wiki/OCamlLibs
@@ -25,43 +27,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ocaml-faad-0.1.2-X-src.tar.bz2
+  unpack ocaml-faad-0.1.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ocaml-faad-0.1.2-X.cygport all
+  cygport ./ocaml-faad-0.1.3-X.cygport all
 
 This will create:
-  /usr/src/ocaml-faad-0.1.2-X-src.tar.bz2
-  /usr/src/ocaml-faad-0.1.2-X.tar.bz2
+  /usr/src/ocaml-faad-0.1.3-X-src.tar.bz2
+  /usr/src/ocaml-faad-0.1.3-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/lib/ocaml/3.10/faad/META
-  /usr/lib/ocaml/3.10/faad/faad.a
-  /usr/lib/ocaml/3.10/faad/faad.cma
-  /usr/lib/ocaml/3.10/faad/faad.cmi
-  /usr/lib/ocaml/3.10/faad/faad.cmx
-  /usr/lib/ocaml/3.10/faad/faad.cmxa
-  /usr/lib/ocaml/3.10/faad/faad.mli
-  /usr/lib/ocaml/3.10/faad/libfaad_stubs.a
-  /usr/lib/ocaml/3.10/stublibs/dllfaad_stubs.so
-  /usr/lib/ocaml/3.10/stublibs/dllfaad_stubs.so.owner
-  /usr/share/doc/ocaml-faad-0.1.2/COPYING
-  /usr/share/doc/ocaml-faad-0.1.2/Changes
-  /usr/share/doc/ocaml-faad-0.1.2/README
-
-------------------
-
 Port Notes:
 
------ version 0.1.2-1 -----
-Version bump.
-
------ version 0.1.0-1 -----
-Initial release for Cygwin.
+----- version 0.1.3-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
