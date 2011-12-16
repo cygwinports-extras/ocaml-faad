@@ -1,5 +1,5 @@
 category: Audio OCaml
-requires: libfaad2 libfaad-devel ocaml-base
+requires: libfaad2 libgcc1 libfaad-devel ocaml-base
 sdesc: "OCaml AAC decoder bindings"
 ldesc: "This package contains an O'Caml interface for the AAC audio 
 decoder, otherwise known as libfaad."
