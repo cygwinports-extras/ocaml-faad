@@ -1,0 +1,20 @@
+inherit ocaml
+
+NAME="ocaml-faad"
+VERSION=0.3.1
+RELEASE=1
+CATEGORY="OCaml"
+SUMMARY="OCaml bindings for libfaad"
+DESCRIPTION="This package contains an O'Caml interface for the AAC audio
+decoder, otherwise known as libfaad."
+HOMEPAGE="http://savonet.sourceforge.net/"
+SRC_URI="mirror://sourceforge/savonet/${P}.tar.gz"
+
+CPPFLAGS+=" -DHAVE_STDINT_H"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake -j1
+}
