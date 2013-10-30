@@ -3,7 +3,7 @@ inherit ocaml
 NAME="ocaml-faad"
 VERSION=0.3.2
 RELEASE=1
-CATEGORY="OCaml"
+CATEGORY="Libs"
 SUMMARY="OCaml bindings for libfaad"
 DESCRIPTION="This package contains an O'Caml interface for the AAC audio
 decoder, otherwise known as libfaad."
